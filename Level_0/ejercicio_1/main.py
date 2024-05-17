@@ -113,14 +113,28 @@ class Transferir():
         pass
 
 
-class App():
+# class App():
     """
     Ejecuta la app.
     """
-    Menu_principal()
+    # Menu_principal()
 
 
 if __name__ == '__main__':
     # App()
-    fichero = open('clientes.txt')
-    print(fichero.read())
+    path = 'C:\\Users\\CHIKY\\OneDrive\\Escritorio\\repositorios\\Ejercicios\\Level_0\\ejercicio_1\\clientes.txt'
+    fichero = open(path, 'a')
+    user = 'max'
+    passw = '2234'
+
+    fichero.write(f'{user}.{passw}\n')
+    fichero.close()
+
+    lectura = open(path, 'r')
+
+    for x in lectura:
+        if x == 'leo.123\n':
+            print('usuario logueado')
+            break
+        else:
+            print(x)
