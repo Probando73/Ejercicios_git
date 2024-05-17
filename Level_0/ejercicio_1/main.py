@@ -122,6 +122,8 @@ class Transferir():
 
 if __name__ == '__main__':
     # App()
+
+   ### probando lectura de datos ###
     path = 'C:\\Users\\CHIKY\\OneDrive\\Escritorio\\repositorios\\Ejercicios\\Level_0\\ejercicio_1\\clientes.txt'
     fichero = open(path, 'a')
     user = 'max'
