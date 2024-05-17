@@ -1,3 +1,4 @@
+
 """1. Cree un sistema de banca en línea con las siguientes características:
 
 * Los usuarios deben poder iniciar sesión con un nombre de usuario y contraseña.
@@ -120,4 +121,6 @@ class App():
 
 
 if __name__ == '__main__':
-    App()
+    # App()
+    fichero = open('clientes.txt')
+    print(fichero.read())
